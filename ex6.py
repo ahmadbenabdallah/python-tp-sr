@@ -1,16 +1,25 @@
-"""ex1.py: Description of what foobar does."""
+""" ex6.py """
 
-__author__      = "A"
-__StudyLevel__   = "M1 E-business en ligne"
 
-#title           :ex1.py
-#description     :This will create a header for a python script.
-#author          :hmed BENABDALLAH
+
+#title           :ex6.py
+#author          :Ahmed BENABDALLAH
 #date            :18/03/2020
-#usage           :python ex1.py
+#usage           :python ex6.py
 
 
-Prenom=input("Entrer votre prénom :")
-Nom=input("Entrer votre nom : ")
+k=int(input("Entrer un nombre : "))
 
-print("Bonjour " + Prenom +" "+ Nom)
+x = range(1,k,1)
+
+sommePair = 0
+sommeImpair =0
+for n in x:
+  print(n)
+  if (n % 2) == 0 :
+   sommePair = sommePair + n
+  else:
+   sommeImpair = sommeImpair + n
+
+print("La somme de nombre pair est " + str(sommePair))
+print("La somme de nombre impair est " + str(sommeImpair))
